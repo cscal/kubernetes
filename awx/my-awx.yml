@@ -1,0 +1,12 @@
+---
+apiVersion: awx.ansible.com/v1beta1
+kind: AWX
+metadata:
+  name: awx
+spec:
+  tower_postgres_storage_requirements:
+    requests:
+      storage: 8Gi
+    limits:
+      storage: 20Gi
+  tower_postgres_storage_class: my-local-storage
